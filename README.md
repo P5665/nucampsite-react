@@ -26,14 +26,14 @@
     <li>Standalone
         <ul>
             <li>Header - basic site header</li>
+            <li>Footer - basic site footer</li>
         </ul>
     </li>
     <li>
         Layered Components
         <ul>
-            <li>HeartSVG - svg img component</li>
-            <li>Heart|CandyColoredHeart - Pick your flavor red or pastel</li>
-            <li>HeartLists - Saying on hearts</li>
+            <li>CampsiteCard - Card img, overlay, text</li>
+            <li>CampsitesList - Uses Array of Objects CAMPSITES to list out all cards and determines layout</li>
         </ul>
     </li>    
 </ul>
