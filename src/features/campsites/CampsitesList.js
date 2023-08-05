@@ -2,8 +2,8 @@ import CampsiteCard from "./CampsiteCard";
 import { CAMPSITES } from "../../app/shared/CAMPSITES";
 import { Col, Row } from "reactstrap";
 
-const CampsitesList = (props) => {
-    // Adjusted classes to make it align properly and look better on mobile .evenly and only my-4 not m-4
+const CampsitesList = () => {
+    // Adjusted classes to make it align properly and look better on desktop and mobile .evenly and only my-4 not m-4
     return (
         <Row className="justify-content-evenly">
             {CAMPSITES.map((campsite) => (
