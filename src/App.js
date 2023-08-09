@@ -1,9 +1,10 @@
 import { Routes, Route } from "react-router-dom";
-import ContactPage from "./pages/ContactPage";
-import HomePage from "./pages/HomePage";
-import CampsitesDirectoryPage from "./pages/CampsitesDirectoryPage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import HomePage from "./pages/HomePage";
+import ContactPage from "./pages/ContactPage";
+import CampsitesDirectoryPage from "./pages/CampsitesDirectoryPage";
+import CampsiteDetailPage from "./pages/CampsiteDetailPage";
 import "./App.css";
 
 // Im keeping Container -- Container -> Row -> Col
@@ -15,6 +16,7 @@ function App() {
                 <Route path="/" element={<HomePage />} />
                 <Route path="contact" element={<ContactPage />} />
                 <Route path="directory" element={<CampsitesDirectoryPage />} />
+                <Route path="directory/:campsiteId" element={<CampsiteDetailPage />} />
             </Routes>
             <Footer />
         </div>
