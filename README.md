@@ -9,6 +9,7 @@
     <li>Show use of slices - Group of Data</li>
     <li>Use of Hooks - useState() </li>
     <li>React Router - Setting up SPA</li>
+    <li>React Router - useParams for /directory/:campsiteId</li>
 </ul>
 
 <h2>Setup</h2>

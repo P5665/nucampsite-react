@@ -1,5 +1,5 @@
-import { PROMOTIONS } from "../../app/shared/PROMOTIONS";
+import { PROMOTIONS } from '../../app/shared/PROMOTIONS';
 
 export const selectFeaturedPromotion = () => {
-    return PROMOTIONS.find((promotion) => promotion.featured);
+	return PROMOTIONS.find((promotion) => promotion.featured);
 };
