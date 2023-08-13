@@ -12,7 +12,6 @@ const CampsiteDetailPage = () => {
 	return (
 		<Container>
 			<SubHeader current={campsite.name} detail={true} />
-			console.log("🚀 ~ file: CampsiteDetailPage.js:15 ~ CampsiteDetailPage ~ true:", true)
 			<Row className='justify-content-evenly'>
 				<CampsiteDetail campsite={campsite} />
 				<CommentsList campsiteId={campsiteId} />

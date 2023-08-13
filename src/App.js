@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
 import CampsitesDirectoryPage from './pages/CampsitesDirectoryPage';
 import CampsiteDetailPage from './pages/CampsiteDetailPage';
+import AboutPage from './pages/AboutPage';
 
 // Im keeping Container -- Container -> Row -> Col
 function App() {
@@ -16,6 +17,7 @@ function App() {
 				<Route path='contact' element={<ContactPage />} />
 				<Route path='directory' element={<CampsitesDirectoryPage />} />
 				<Route path='directory/:campsiteId' element={<CampsiteDetailPage />} />
+				<Route path='about' element={<AboutPage />} />
 			</Routes>
 			<Footer />
 		</div>
