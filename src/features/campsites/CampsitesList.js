@@ -1,18 +1,20 @@
-import CampsiteCard from "./CampsiteCard";
-import { CAMPSITES } from "../../app/shared/CAMPSITES";
-import { Col, Row } from "reactstrap";
+import CampsiteCard from './CampsiteCard';
+import { Col, Row } from 'reactstrap';
+import { selectAllCampsites } from './campsitesSlice';
 
 const CampsitesList = () => {
-    // Adjusted classes to make it align properly and look better on desktop and mobile .evenly and only my-4 not m-4
-    return (
-        <Row className="justify-content-evenly">
-            {CAMPSITES.map((campsite) => (
-                <Col md="6" className="my-4" key={campsite.id}>
-                    <CampsiteCard campsite={campsite} />
-                </Col>
-            ))}
-        </Row>
-    );
+	const campsites = selectAllCampsites();
+
+	// Adjusted classes to make it align properly and look better on desktop and mobile .evenly and only my-4 not m-4
+	return (
+		<Row className='justify-content-evenly'>
+			{campsites.map((campsite) => (
+				<Col md='6' className='my-4' role='button' key={campsite.id}>
+					<CampsiteCard campsite={campsite} />
+				</Col>
+			))}
+		</Row>
+	);
 };
 
 export default CampsitesList;

@@ -6,6 +6,10 @@
     <li>Use of Node</li>
     <li>Show use of later versions of JS - Arrow Functions, Implicit returns, .map(), destructuring arrays and objects</li>
     <li>Basic React features - JSX, props, components</li>
+    <li>Show use of slices - Group of Data</li>
+    <li>Use of Hooks - useState() </li>
+    <li>React Router - Setting up SPA</li>
+    <li>React Router - useParams for /directory/:campsiteId</li>
 </ul>
 
 <h2>Setup</h2>
@@ -36,4 +40,13 @@
             <li>CampsitesList - Uses Array of Objects CAMPSITES to list out all cards and determines layout</li>
         </ul>
     </li>    
+</ul>
+
+<h2>React Router</h2>
+<ul>
+    <li><BrowserRouter>Parent router, enables react router in our aoo by wrapping around <App>.  Uses HTML5 History API to let us move back and forth in browsing history.  App.js  </li>
+    <li><Route> Renders the UI for a specific path App.js</li>
+    <li><Routes>Used to group <Route> components together.  Handles directing requests to <Route> Just like a JS switch. App.js</li>
+    <li><Link>Creates links to a path, renders as <a> Use this inside of react app instead of <a> so it goes through React Router</li>
+    <li><NavLink> Special version of <Link>, know one in a group is selected.  Useful for styling active link and assistive technology.</li>
 </ul>
