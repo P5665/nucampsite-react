@@ -11,7 +11,10 @@ const CampsiteDetailPage = () => {
 	// Added justify-content-evenly
 	return (
 		<Container>
-			<SubHeader current={campsite.name} detail={true} />
+			<SubHeader
+				current={campsite.name}
+				detail={true}
+			/>
 			<Row className='justify-content-evenly'>
 				<CampsiteDetail campsite={campsite} />
 				<CommentsList campsiteId={campsiteId} />
