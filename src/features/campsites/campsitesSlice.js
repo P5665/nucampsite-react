@@ -15,7 +15,7 @@ A string that represents the name of the slice. It's used to automatically gener
 */
 
 const initialState = {
-	campsiteArray: CAMPSITES,
+	campsitesArray: CAMPSITES,
 };
 
 const campsitesSlice = createSlice({
@@ -25,18 +25,19 @@ const campsitesSlice = createSlice({
 
 export const campsitesReducer = campsitesSlice.reducer;
 
-export const selectAllCampsites = () => {
-	return CAMPSITES;
+// Selector functions - state.campsites (store.js) .campsitesArray (initialState)
+export const selectAllCampsites = (state) => {
+	return state.campsites.campsitesArray;
+};
+
+export const selectCampsiteById = (id) => (state) => {
+	return state.campsites.campsitesArray.find((campsite) => campsite.id === parseInt(id));
+};
+
+export const selectFeaturedCampsite = (state) => {
+	return state.campsites.campsitesArray.find((campsite) => campsite.featured);
 };
 
 // export const selectRandomCampsite = () => {
 //     return CAMPSITES[Math.floor(Math.random() * CAMPSITES.length)];
 // };
-
-export const selectCampsiteById = (id) => {
-	return CAMPSITES.find((campsite) => campsite.id === parseInt(id));
-};
-
-export const selectFeaturedCampsite = () => {
-	return CAMPSITES.find((campsite) => campsite.featured);
-};
