@@ -19,9 +19,11 @@
     <li>git commands for section "…or create a new repository on the command line"</li>
     <li>npx create-react-app . --template redux</li>
     <li>npm install bootstrap@5.1.3 bootstrap-social@5.1.1 font-awesome@4.7.0 formik@2.2.9 react-router-dom@6.2.1 react-spring@9.4.5-beta.1 reactstrap@9.0.1 redux-logger@3.0.6 typeface-lobster@1.1.13 typeface-open-sans@1.1.13</li>
-    <li>** I updated to latest bootstrap 5.3.1 --noted just incase</li>
+    <li>** I updated to latest bootstrap 5.3.1 --noted just in case</li>
     <li>npm start</li>
     <li>removed reportWebVitals and starter code from Index and App.js</li>
+    <li> npm install -g json-server</li>
+    <li><code>json-server -H 0.0.0.0 --watch db.json -p 3030 -d 2000</code> Needs to match port number in shared/baseUrl.js</li>
 
 </ol>
 
@@ -49,4 +51,14 @@
     <li><Routes>Used to group <Route> components together.  Handles directing requests to <Route> Just like a JS switch. App.js</li>
     <li><Link>Creates links to a path, renders as <a> Use this inside of react app instead of <a> so it goes through React Router</li>
     <li><NavLink> Special version of <Link>, know one in a group is selected.  Useful for styling active link and assistive technology.</li>
+</ul>
+
+<h2>Redux</h2>
+<ul>
+    <li>Provider</li>
+    <li>createSlice()</li>
+    <li>useDispatch()</li>
+    <li>useSelector()</li>
+    <li>store.js</li>
+    <li>configure</li>
 </ul>
