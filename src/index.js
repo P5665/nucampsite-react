@@ -17,6 +17,8 @@ const root = createRoot(container);
 
 root.render(
 	<React.StrictMode>
+		{/* Redux store allows for accessing things globally by App and all children - 
+        createSlice() useSelector() */}
 		<Provider store={store}>
 			<BrowserRouter>
 				<App />
